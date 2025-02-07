@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Flex-Grid</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <h4 class="logo-max">Antonio Gómez. Desarrollo Web </h4>
+                <h3 class="logo-min">A.G.</h3>
+            </div>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Bio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>ANTONIO GÓMEZ </h1>
+            <p>
+                < Desarrollador Web />
+            </p>
+        </section>
+
+        <section id="bio" class="bio">
+            <h2>Bio de Antonio</h2>
+            <article class="bio-content">
+                <img src="./styles/jugador.png" alt="Foto de perfil" />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis quae. Exercitationem non
+                    soluta sint nulla asperiores officia amet delectus commodi, nam iusto iste illo ut quasi dolorem
+                    voluptatem porro.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, nobis quae.
+                    Exercitationem non soluta sint nulla asperiores officia amet delectus commodi, nam iusto iste illo
+                    ut quasi dolorem voluptatem porro.Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                    nobis quae. Exercitationem non soluta sint nulla asperiores officia amet delectus commodi, nam iusto
+                    iste illo ut quasi dolorem voluptatem porro.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit, nobis quae. Exercitationem non soluta sint nulla asperiores officia amet delectus commodi,
+                    nam iusto iste illo ut quasi dolorem voluptatem porro.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Fugit, nobis quae. Exercitationem non soluta sint nulla asperiores officia amet
+                    delectus commodi, nam iusto iste illo ut quasi dolorem voluptatem porro.Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+
+                </p>
+            </article>
+            <h2>Stack Técnico</h2>
+            <article class="tech-container">
+                <div class="tech-card back">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, API REST</p>
+                </div>
+                <div class="tech-card bbdd">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Bases de Datos</h3>
+                    <p>MySQL, MongoDB</p>
+                </div>
+                <div class="tech-card front">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Frontend</h3>
+                    <p> HTML, CSS, JavaScript, React, Vite, Tailwind</p>
+                </div>
+                <div class="tech-card tools">
+                    <i class="fa-solid fa-toolbox"></i>
+                    <h3>Herramientas</h3>
+                    <p>VSCode, Git, GitHub, Figma, Postman, Notion</p>
+                </div>
+            </article>
+
+            <article class="cv">
+                <a href="https://github.com/" class="cv-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/antonio-g%C3%B3mez-dom%C3%ADnguez/" class="cv-btn"><i
+                        class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <button id="archivo" class="cv-btn"><i class="fa-solid fa-file-arrow-down"></i> CV</button>
+            </article>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <div class="h2-title">
+                <h2>Proyectos Publicados</h2>
+            </div>
+            <article class="project-grid">
+                <div class="project-card">
+                    <img src="./styles/coworking.webp" alt="Proyecto Coworking" />
+                    <h3>CoworkingSpaces</h3>
+                    <p>
+                        Gestión de espacios de coworking. Reservas, incidencias, chat...
+                    </p>
+                    <div class="anchors">
+                        <a href="https://github.com/AntGom/Coworking_Space">Repo <i class="fa-brands fa-github"></i></a>
+                        <a href="https://coworking-spaces-amber.vercel.app/">Ir ⇒</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./styles/portfolioPc.webp" alt="Proyecto Portfolio" />
+                    <h3>Web-Portfolio</h3>
+                    <p>Portfolio personal sonde muestro mis habilidades y proyectos.</p>
+                    <div class="anchors">
+                        <a href="https://github.com/AntGom/Web-Portfolio">Repo <i class="fa-brands fa-github"></i></a>
+                        <a href="https://antgom.github.io/Web-Portfolio/">Ir ⇒</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./styles/colores.webp" alt="Proyecto Colores" />
+                    <h3> Encuentra el Color </h3>
+                    <p>
+                        Juego donde debes encontrar el color complementario de uno dado.
+                    </p>
+                    <div class="anchors">
+                        <a href="https://github.com/AntGom/JuegosColores">Repo <i class="fa-brands fa-github"></i></a>
+                        <a href="https://antgom.github.io/JuegosColores/">Ir ⇒</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./styles/todoPc.webp" alt="Proyecto ToDo" />
+                    <h3>To-Do List</h3>
+                    <p>Útil como lista de tareas, lista de compras... No olvidarás nada!!</p>
+                    <div class="anchors">
+                        <a href="https://github.com/AntGom/todolist">Repo <i class="fa-brands fa-github"></i></a>
+                        <a href="https://antgom.github.io/todolist/">Ir ⇒</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section id="contacto" class="contact">
+            <div class="h2-title">
+                <h2>Contacto</h2>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellidos" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono"></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Número de tlf." />
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">¿Cuándo podemos reunirnos?</label>
+                    <input type="date" id="fecha" name="fecha" />
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">¿Qué horario te viene mejor?</label>
+                    <input type="time" id="hora" name="hora" />
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje"></label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Deja aquí tu mensaje."
+                        required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025. Portfolio práctiva Evolve. Desde Andalucía con ❤.</p>
+    </footer>
+</body>
+
+</html>
